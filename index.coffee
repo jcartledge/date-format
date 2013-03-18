@@ -1,3 +1,10 @@
 date_format_query = new (require "date-format").DateFormatQuery
 
-console.log date_format_query.match("27 May 2013")
+examples = [
+  "27 May 2013"
+  # "3rd of August 99"
+  # "12:00am"
+  # "3/4/1988"
+]
+
+console.log date_format_query.suggestions(example) for example in examples
